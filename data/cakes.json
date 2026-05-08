@@ -1,0 +1,605 @@
+{
+    "cakes": [
+    {
+       "id": 1,
+        "name": "Chocolate Cake❤",
+        "price": 900,
+        "category": "Birthday",
+        "image": "images/at30.jpeg",
+        "description": "nice chocolate cake with black cream💕👌"
+
+    },
+      
+    {
+        "id": 2,
+        "name": "Black Forest Cake❤",
+        "price": 950,
+        "category": "Birthday",
+        "image": "images/beemer.jpeg",
+        "description": "for the love of cars💕👌"
+    },
+
+    {
+
+         "id": 3,
+        "name": "Marble Cake❤",
+        "price": 800,
+        "category": "Birthday",
+        "image": "images/blacklovers.jpeg",
+        "description": "with a touch of black and gold💕👌"
+    },
+
+    {
+        "id": 4,
+        "name": "Orange Cake❤",
+        "price": 850,
+        "category": "Birthday",
+        "image": "images/bluey.jpeg",
+        "description": "kids favourate bluey💕👌"
+
+    },
+
+    {
+        "id": 5,
+        "name": "Coffe Cake❤",
+        "price": 1000,
+        "category": "Present",
+        "image": "images/boss.jpeg",
+        "description": "Boss present💕👌"
+
+    },
+
+    {
+        "id": 6,
+        "name": "FunFetti Cake❤",
+        "price": 800,
+        "category": "Birthday",
+        "image": "images/cocomelon.jpeg",
+        "description": "baby cocomelon 💕👌"
+
+    },
+        
+    {
+        "id": 7,
+        "name": "Blueberry Cake❤",
+        "price": 900,
+        "category": "Birthday",
+        "image": "images/cream-heart.jpeg",
+        "description": "heart of love💕👌"
+    },
+
+    {
+        "id": 8,
+        "name": "Peach Cupcakes❤",
+        "price": 300,
+        "category": "Birthday",
+        "image": "images/creamy-muffins.jpeg",
+        "description": "cupcakes for birthday breakfast💕👌"
+      
+    },
+
+    {
+        "id": 9,
+        "name": "Vanilla Sponge Cake❤",
+        "price": 800,
+        "category": "Birthday",
+        "image": "images/fortnite-benny.jpeg",
+        "description": "fortnite benny lover💕👌"
+    },
+
+    {
+       "id": 10,
+        "name": "Oreo Cake",
+        "price": 950,
+        "category": "Birthday",
+        "image": "images/fortnite.jpeg",
+        "description": "real ninjas💕👌"
+       
+    }, 
+
+    {
+       
+        "id": 11,
+        "name": "Rainball Cake❤",
+        "price": 900,
+        "category": "Birthday",
+        "image": "images/goldLove.jpeg",
+        "description": "cream and gold touch💕👌"
+
+    },
+
+      
+
+        {
+        "id": 12,
+        "name": "Chocolate & vanilla cupcakes❤",
+        "price": 300,
+        "category": "Graduation",
+        "image": "images/graduate.jpeg",
+        "description": "present for a graduate cupcakes 👌💕"
+        },
+
+
+        {
+       "id": 13,
+        "name": "Red velvet & mint❤",
+        "price": 800,
+        "category": "Birthday",
+        "image": "images/kids-football.jpeg",
+        "description": "football lovers💕👌"
+        },
+
+
+
+       {
+       "id": 14,
+        "name": "Chocolate Fuge Cake❤ ",
+        "price": 860,
+        "category": "Kids",
+        "image": "images/minion.jpeg",
+        "description": "boys bdae with favourite cartoon💕👌"
+       },
+
+
+
+       {
+        "id": 15,
+        "name": "Lemon Cake❤",
+        "price": 800,
+        "category": "Present",
+        "image": "images/mother's-day.jpeg",
+        "description": "giving  grandma cake of her love💕👌"
+       },
+
+
+        {
+        "id": 16,
+        "name": "Peanut Butter Cake❤",
+        "price": 580,
+        "category": "Birthday",
+        "image": "images/pinkypee.jpeg",
+        "description": "nice pink cake💕👌"
+        },
+
+
+        {
+        "id": 17,
+        "name": "Strawberry Cake❤",
+        "price": 580,
+        "category": "Birthday",
+        "image": "images/queen.jpeg",
+        "description": " for queens💕👌"
+        },
+
+        {
+        "id": 18,
+        "name": "Creamy Muffins❤",
+        "price": 400,
+        "category": "Birthday",
+        "image": "images/sweety.jpeg",
+        "description": "muffins with cream for birthdays💕👌"
+        },
+
+        {
+        "id": 19,
+        "name": "Vanilla Cake❤",
+        "price": 300,
+        "category": "Present",
+        "image": "images/valentine.jpeg",
+        "description": "for lovers day 💕👌"
+        },
+
+        {
+        "id": 20,
+        "name": "Chocolate Cake❤",
+        "price": 1000,
+        "category": "Birthday",
+        "image": "images/white&black.jpeg",
+        "description": "vanilla, chocolate 💕👌"
+        },
+
+        {
+        "id": 21,
+        "name": "Yummy Cupcakes❤",
+        "price": 300,
+        "category": "Birthday",
+        "image": "images/yummy.jpeg",
+        "description": "nice creamy cupcakes for 23 Birthday💕👌"
+        },
+
+        {
+         "id": 22,
+         "name":"2 Tier cake❤",
+         "price": 1000,
+         "category": "Kids",
+         "image": "images/2tiercoco.jpeg",
+         "description": "kids birthday💕👌"
+        },
+
+        {
+            "id": 23,
+            "name": "Attire",
+            "price": 4000,
+            "category": "Wedding",
+            "image": "images/attirewed.jpeg",
+            "description": "attire style cake💕👌"
+        },
+
+        {
+            "id": 24,
+            "name": "With Beeds",
+            "price": 3000,
+            "category": "Wedding",
+            "image": "images/beedswed.jpeg",
+            "description": "decoration with beeds like💕👌"
+
+        },
+
+        {
+            "id": 25,
+            "name": "Culcture",
+            "price": 6000,
+            "category": "Wedding",
+            "image": "images/culturalWed2.jpeg",
+            "description": "3 tier cake 💕👌"
+
+        },
+        
+
+         {
+            "id": 26,
+            "name": "Culcture",
+            "price": 2000,
+            "category": "Wedding",
+            "image": "images/culturewed.jpeg",
+            "description": "wed simple cake 💕👌"
+
+        },
+
+
+         {
+            "id": 27,
+            "name": "Toys",
+            "price": 700,
+            "category": "Kids",
+            "image": "images/dumbtrucks.jpeg",
+            "description": "toy cake 💕👌"
+
+        },
+
+
+         {
+            "id": 28,
+            "name": "Pinky",
+            "price": 2000,
+            "category": "Graduation",
+            "image": "images/grad4.jpeg",
+            "description": "learing is power 💕👌"
+
+        },
+
+
+        
+         {
+            "id": 29,
+            "name": "Boss Lady",
+            "price": 1000,
+            "category": "Graduation",
+            "image": "images/gradu1.jpeg",
+            "description": "power 💕👌"
+
+        },
+
+
+         {
+            "id": 30,
+            "name": "Working Hard",
+            "price": 3000,
+            "category": "Graduation",
+            "image": "images/gradu2.jpeg",
+            "description": "2 tier cake 💕👌"
+
+        },
+
+
+         {
+            "id": 31,
+            "name": "Queens",
+            "price": 1500,
+            "category": "Graduation",
+            "image": "images/gradue.jpeg",
+            "description": "cake for queen 💕👌"
+
+        },
+
+         {
+            "id": 32,
+            "name": "Accountant",
+            "price": 1000,
+            "category": "Graduation",
+            "image": "images/gradue3.jpeg",
+            "description": "happy endings💕👌"
+
+        },
+
+         {
+            "id": 33,
+            "name": "Purple",
+            "price": 1500,
+            "category": "Graduation",
+            "image": "images/gradue4.jpeg",
+            "description": "purple love 💕👌"
+
+        },
+
+         {
+            "id": 34,
+            "name": "Class end",
+            "price": 2000,
+            "category": "Graduation",
+            "image": "images/gradue6.jpeg",
+            "description": "creamy 💕👌"
+
+        },
+
+
+         {
+            "id": 35,
+            "name": "Grey & Pink",
+            "price": 2000,
+            "category": "Graduation",
+            "image": "images/gradue7.jpeg",
+            "description": "pink grey and white 💕👌"
+
+        },
+
+         {
+            "id": 36,
+            "name": "Raise",
+            "price": 1500,
+            "category": "Graduation",
+            "image": "images/graduea.jpeg",
+            "description": "cake 💕👌"
+
+        },
+
+         {
+            "id": 37,
+            "name": "Baby",
+            "price": 600,
+            "category": "Kids",
+            "image": "images/halfyear.jpeg",
+            "description": "6 mnth cake 💕👌"
+
+        },
+
+         {
+            "id": 38,
+            "name": "Heart",
+            "price": 580,
+            "category": "Present",
+            "image": "images/heartpink.jpeg",
+            "description": "heart cake 💕👌"
+
+        },
+
+
+         {
+            "id": 39,
+            "name": "Cartoons",
+            "price": 750,
+            "category": "Kids",
+            "image": "images/meloon.jpeg",
+            "description": "cocomelon 💕👌"
+
+        },
+
+         {
+            "id": 40,
+            "name": "Micky",
+            "price": 500,
+            "category": "Kids",
+            "image": "images/mickymouse.jpeg",
+            "description": "mouse  💕👌"
+
+        },
+
+         {
+            "id": 41,
+            "name": "Mom",
+            "price": 700,
+            "category": "Present",
+            "image": "images/mumpres.jpeg",
+            "description": "mom cake 💕👌"
+
+        },
+
+         {
+            "id": 42,
+            "name": "Nude",
+            "price": 3000,
+            "category": "Wedding",
+            "image": "images/nudewed.jpeg",
+            "description": "2 tier cake 💕👌"
+
+        },
+
+         {
+            "id": 43,
+            "name": "Ptrol",
+            "price": "750",
+            "category": "Kids",
+            "image": "images/pawpatrol.jpeg",
+            "description": "kids cake 💕👌"
+
+        },
+
+         {
+            "id": 44,
+            "name": "Beautiful",
+            "price": 950,
+            "category": "Present",
+            "image": "images/peachpre.jpeg",
+            "description": "peach nice 💕👌"
+
+        },
+
+
+         {
+            "id": 45,
+            "name": "Unity",
+            "price": 6000,
+            "category": "Wedding",
+            "image": "images/peachwed.jpeg",
+            "description": "2 tier cake 💕👌"
+
+        },
+
+
+         {
+            "id": 46,
+            "name": "Pig",
+            "price": 600,
+            "category": "Kids",
+            "image": "images/peppa.jpeg",
+            "description": "peppa pig  💕👌"
+
+        },
+
+         {
+            "id": 47,
+            "name": "Blue Pickok",
+            "price": 6000,
+            "category": "Wedding",
+            "image": "images/picok2wed.jpeg",
+            "description": "pickok design 💕👌"
+
+        },
+
+         {
+            "id": 48,
+            "name": "Brown Pi",
+            "price": 6000,
+            "category": "Wedding",
+            "image": "images/picokwed.jpeg",
+            "description": "cake for love 💕👌"
+
+        },
+
+         {
+            "id": 49,
+            "name": "Pinky",
+            "price": 850,
+            "category": "Kids",
+            "image": "images/pinkyblue.jpeg",
+            "description": "bluey 💕👌"
+
+        },
+
+
+         {
+            "id": 50,
+            "name": "Pres",
+            "price": 900,
+            "category": "Present",
+            "image": "images/pinkypee.jpeg",
+            "description": "pinky  💕👌"
+
+        },
+
+         {
+            "id": 51,
+            "name": "Red",
+            "price": 600,
+            "category": "Present",
+            "image": "images/redribbon.jpeg",
+            "description": "nice cake 💕👌"
+
+        },
+
+
+         {
+            "id": 52,
+            "name": "Roses",
+            "price": 6000,
+            "category": "Wedding",
+            "image": "images/redrosswed.jpeg",
+            "description": "redross cake 💕👌"
+
+        },
+
+         {
+            "id": 53,
+            "name": "Spider",
+            "price": 850,
+            "category": "Kids",
+            "image": "images/spiderman.jpeg",
+            "description": "kids loves spider cake 💕👌"
+
+        },
+
+         {
+            "id": 54,
+            "name": "Toys",
+            "price": 650,
+            "category": "Kids",
+            "image": "images/toys.jpeg",
+            "description": " cake 💕👌"
+
+        },
+
+         {
+            "id": 55,
+            "name": "Traditional",
+            "price": 5500,
+            "category": "Wedding",
+            "image": "images/traditionalwed.jpeg",
+            "description": "wed cake 💕👌"
+
+        },
+
+         {
+            "id": 56,
+            "name": "Train",
+            "price": 700,
+            "category": "Kids",
+            "image": "images/train.jpeg",
+            "description": "kids cake 💕👌"
+
+        },
+
+         {
+            "id": 57,
+            "name": "War",
+            "price": 800,
+            "category": "Kids",
+            "image": "images/warstars.jpeg",
+            "description": "kids cake 💕👌"
+
+        },
+
+         {
+            "id": 58,
+            "name": "White Love",
+            "price": 5500,
+            "category": "Wedding",
+            "image": "images/whiteflowerWed.jpeg",
+            "description": "beautiful cake 💕👌"
+
+        },
+
+         {
+            "id": 59,
+            "name": "Vanilla Cake❤",
+            "price": 4000,
+            "category": "Wedding",
+            "image": "images/whitewed.jpeg",
+            "description": "wed cake 💕👌"
+
+        }
+    ]
+}
+
+
+
+

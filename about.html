@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Cake Creamery❤</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/cake.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="about-section">
+            <div class="about-container">
+                
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <h3>💖 Baked with Love since 2020</h3>
+                    <p>
+                       At Abby's Cake Creamery, we believe that a good cake makes happiness grow. 
+                       We bake all our cakes by hand, using only fresh ingredients to make sure 
+                        every bite tastes delicious.</p>
+
+                    <p>From birthday cakes, wedding cakes, to small cupcakes - we create 
+                    based on your wishes. Our goal is to give sweet memories in everything we do.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Cake Designs</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Fresh Ingredients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="images/culturalWed2.jpeg" alt="Our Baker">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+        
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

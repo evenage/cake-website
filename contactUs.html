@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Cake Creamery❤</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/cake.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Contact info -->
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p>💖 We welcome you with love :</p>
+                    
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>21900 andiswa street<br>Cape Town, Western Cape<br>South Africa</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+27 695941217</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>⏰ Opening Hours</h3>
+                        <p>Mon - Fri: 8AM - 6PM<br>
+                           Sat: 9AM - 4PM<br>
+                           Sun: Closed</p>
+                    </div>
+                </div>
+
+                <!--  Google Map -->
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52926.969783727116!2d18.646045031837527!3d-33.9941875897474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s21900%20Andiswa%20Street%2C%20Fairdale!5e0!3m2!1sen!2sza!4v1778201575164!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // header and footer
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+        
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>

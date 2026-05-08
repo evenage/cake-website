@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Cake Creamery❤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/cake.css">
+</head>
+<body>
+    <!-- JS -->
+    <div id="header"></div>
+
+    <main>
+        <!-- Page Title -->
+        <section class="page-header">
+            <h2>Our Delicious Cakes ❤</h2>
+            <p>Choose from 22+ amazing flavors for every occasion</p>
+        </section>
+
+        <!-- Search neFilter -->
+        <section class="filters">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="Search cakes by name...">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Present">Present</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Graduation">Graduation</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- all cakes -->
+        <section class="all-cakes">
+            <div id="allCakes" class="cake-grid">
+                <p>Loading cakes...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with JS -->
+    <div id="footer"></div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
