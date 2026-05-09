@@ -111,7 +111,7 @@ function displayFeaturedCakes() {
         .catch(err => console.log('Cakes error:', err));
 }
 
-// cake.html - Macakes ese
+// cake.html - all cakes 
 function displayAllCakes() {
     const allCakesContainer = document.getElementById('allCakes');
     if (!allCakesContainer) return;
@@ -223,7 +223,7 @@ function handleOrderSubmit() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Tora details dzecake
+        //  cake details 
         const cakeNameElement = document.querySelector('.order-cake-info h3');
         const cakePriceElement = document.getElementById('orderPrice');
         
