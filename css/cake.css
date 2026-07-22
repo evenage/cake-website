@@ -206,6 +206,12 @@ nav a.active {
     transform: translateY(-5px);
 }
 
+.cake-card.selected-cake {
+    border: 3px solid #d63384;
+    box-shadow: 0 0 0 6px rgba(214, 51, 132, 0.15);
+    transform: translateY(-5px);
+}
+
 .cake-card img {
     width: 100%;
     height: 250px;
@@ -256,6 +262,153 @@ nav a.active {
     font-size: 36px;
     margin-bottom: 40px;
     font-weight: normal;
+}
+
+/* ===== CAKE PAGE HEADER ===== */
+.page-header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.page-header h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.filters {
+    padding: 10px 20px 30px;
+}
+
+.filters .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 12px 16px;
+    border: 1px solid #e2c8d8;
+    border-radius: 12px;
+    min-width: 240px;
+    font-size: 15px;
+}
+
+/* ===== ORDER PAGE ===== */
+.order-section {
+    padding: 60px 20px;
+    background-color: #fff5f8;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.order-cake-info,
+.order-form {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.order-cake-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-cake-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+.order-cake-info img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    min-height: 320px;
+}
+
+.order-form h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #e4e4e4;
+    background: #fafafa;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.order-form select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #d63384 50%), linear-gradient(135deg, #d63384 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.order-cake-info .price,
+.order-cake-info .category,
+.order-cake-info .desc {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .order-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-section {
+        padding: 40px 20px;
+    }
+
+    .order-form h3 {
+        font-size: 30px;
+    }
 }
 
 .features {
@@ -370,5 +523,180 @@ footer p {
 
     .features {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #fff8fb 0%, #ffeef6 100%);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    color: #a233d6;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.stat {
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(214, 51, 132, 0.1);
+}
+
+.stat h4 {
+    font-size: 24px;
+    color: #d63384;
+    margin-bottom: 6px;
+}
+
+.stat p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    object-fit: cover;
+    min-height: 420px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff5f8;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns side by side */
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.info-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-3px);
+}
+
+.info-item h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.info-item p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Google Map */
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== MOBILE RESPONSIVE - MOVED TO END ===== */
+@media (max-width: 768px) {
+    /* ... keep all your other mobile rules ... */
+
+    /* CONTACT STACK ON MOBILE */
+    .contact-container {
+        grid-template-columns: 1fr; /* stack them */
+        gap: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contact-map iframe {
+        min-height: 300px; /* shorter on mobile */
+    }
+
+    /* Make info items 2 per row on mobile if you want */
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .contact-info h2, .contact-info > p {
+        grid-column: 1 / -1; /* title spans both columns */
+        text-align: center;
     }
 }

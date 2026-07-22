@@ -1,71 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Load Header
-    fetch('components/header.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-            setActiveNav();
-        });
-
-    // Load Footer
-    fetch('components/footer.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-            updateDateTime();
-            setInterval(updateDateTime, 1000);
-        });
-
+    loadHeaderFooter();
     displayFeaturedCakes();
     displayAllCakes();
-    displayOrderCake(); 
-    handleOrderSubmit(); 
+    displayOrderCake();
+    handleOrderSubmit();
 });
 
-function setActiveNav() {
-    const currentPage = window.location.pathname.split("/").pop() || 'index.html' ;
-    document.querySelectorAll('nav a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
+function loadHeaderFooter() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const headerElement = document.getElementById('header-placeholder') || document.getElementById('header');
+    const footerElement = document.getElementById('footer-placeholder') || document.getElementById('footer');
 
-}function setActiveNav() {
-    const currentPage = window.location.pathname.split("/").pop() || 'cake.html' ;
-    document.querySelectorAll('nav a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
+    if (headerElement) {
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => {
+                headerElement.innerHTML = data;
+                setActiveNav(currentPage);
+            })
+            .catch(err => console.error('HEADER ERROR:', err));
+    }
+
+    if (footerElement) {
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                footerElement.innerHTML = data;
+                updateDateTime();
+                setInterval(updateDateTime, 1000);
+            })
+            .catch(err => console.error('FOOTER ERROR:', err));
+    }
 }
 
-function setActiveNav() {
-    const currentPage = window.location.pathname.split("/").pop() || 'contactUs.html' ;
-    document.querySelectorAll('nav a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
+function setActiveNav(currentPage) {
+    setTimeout(() => {
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === currentPage);
+        });
+    }, 50);
 }
-
-function setActiveNav() {
-    const currentPage = window.location.pathname.split("/").pop() || 'order.html' ;
-    document.querySelectorAll('nav a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
-}
-
-function setActiveNav() {
-    const currentPage = window.location.pathname.split("/").pop() || 'about.html' ;
-    document.querySelectorAll('nav a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
-}
-
 
 function updateDateTime() {
     const now = new Date();
@@ -158,7 +132,7 @@ function renderCakes(cakes) {
 
     cakes.forEach(cake => {
         const cakeCard = `
-            <div class="cake-card">
+            <div class="cake-card" id="cake-${cake.id}" data-cake-id="${cake.id}">
                 <img src="${cake.image}" alt="${cake.name}">
                 <h3>${cake.name}</h3>
                 <p class="price">R${cake.price}</p>
@@ -168,6 +142,24 @@ function renderCakes(cakes) {
         `;
         container.innerHTML += cakeCard;
     });
+
+    highlightSelectedCake();
+}
+
+function highlightSelectedCake() {
+    const params = new URLSearchParams(window.location.search);
+    const cakeId = params.get('id');
+
+    if (!cakeId) return;
+
+    const selectedCake = document.getElementById(`cake-${cakeId}`);
+    if (!selectedCake) return;
+
+    setTimeout(() => {
+        selectedCake.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        selectedCake.classList.add('selected-cake');
+        setTimeout(() => selectedCake.classList.remove('selected-cake'), 3000);
+    }, 200);
 }
 
 // Function to show cakes chosen on order.html
@@ -239,10 +231,25 @@ function handleOrderSubmit() {
         const name = document.getElementById('customerName').value;
         const phone = document.getElementById('customerPhone').value;
         const email = document.getElementById('customerEmail').value;
+        const deliveryType = document.getElementById('deliveryType').value;
+        const deliveryAddress = document.getElementById('deliveryAddress').value;
         const date = document.getElementById('deliveryDate').value;
         const message = document.getElementById('message').value;
         const requests = document.getElementById('specialRequests').value;
+
+        if (deliveryType === 'Delivery' && !deliveryAddress.trim()) {
+            alert('Please enter a delivery address for Delivery orders.');
+            return;
+        }
         
+        const urlParams = new URLSearchParams(window.location.search);
+        const cakeId = urlParams.get('id');
+        const orderPageUrl = window.location.href.split('?')[0];
+        const siteBaseUrl = window.location.origin + '/';
+        const cakeLink = cakeId
+            ? `${siteBaseUrl}cake.html?id=${cakeId}#cake-${cakeId}`
+            : `${siteBaseUrl}cake.html`;
+
         //  WhatsApp message
         const whatsappMsg = `*NEW CAKE ORDER* 🎂%0A%0A` +
             `*Cake:* ${cakeName}%0A` +
@@ -251,9 +258,13 @@ function handleOrderSubmit() {
             `Name: ${name}%0A` +
             `Phone: ${phone}%0A` +
             `Email: ${email}%0A` +
+            `Delivery Type: ${deliveryType}%0A` +
+            `${deliveryType === 'Delivery' ? `Delivery Address: ${deliveryAddress}%0A` : ''}` +
             `Delivery Date: ${date}%0A%0A` +
             `*Message on Cake:* ${message || 'None'}%0A` +
-            `*Special Requests:* ${requests || 'None'}`;
+            `*Special Requests:* ${requests || 'None'}%0A%0A` +
+            `Cake link: ${cakeLink}%0A` +
+            `Cake name: ${cakeName}`;
         
         // app
         const yourWhatsAppNumber = "+27695941217"; 
@@ -268,3 +279,11 @@ function handleOrderSubmit() {
     });
 }
 
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    const hamburger = document.querySelector('.hamburger');
+    if (nav && hamburger) {
+        nav.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    }
+}
